@@ -1,0 +1,15 @@
+* {
+    user-select: none;
+  }
+  .mycard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    display: inline-block;
+    width: calc(33.33% - 20px);
+    margin: 50px;
+    box-sizing: border-box;
+  }

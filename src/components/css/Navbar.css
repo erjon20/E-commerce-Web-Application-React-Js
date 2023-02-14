@@ -1,0 +1,27 @@
+/* navbar.css */
+
+
+.navbar-container {
+  display: grid;
+  grid-gap: 150px;
+  align-items: center;
+  justify-content: center;
+  color: whitesmoke;
+ font-size: small;
+ grid-template-columns: repeat(4, 1f, 1f, 1f,1f); 
+  
+}
+.image{
+    margin-right: 5px;
+}
+.nav-link {
+  margin: 0 100px;
+  color: whitesmoke !important;
+}
+
+@media only screen and (max-width: 600px) {
+ .nav-link{
+  margin: 0 5px;
+  font-size: x-small;
+ }
+}
