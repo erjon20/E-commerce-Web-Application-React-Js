@@ -1,27 +1,22 @@
 /* navbar.css */
 
-
-.navbar-container {
-  display: grid;
-  grid-gap: 150px;
-  align-items: center;
-  justify-content: center;
-  color: whitesmoke;
- font-size: small;
- grid-template-columns: repeat(4, 1f, 1f, 1f,1f); 
-  
-}
-.image{
-    margin-right: 5px;
-}
 .nav-link {
-  margin: 0 100px;
-  color: whitesmoke !important;
+  color: #FFFEBA !important;
+
+}
+.dropdown-menu
+{
+  background: #FFFEBA;
+}
+.dropdown-item:hover
+{
+  background: grey;
 }
 
-@media only screen and (max-width: 600px) {
- .nav-link{
-  margin: 0 5px;
-  font-size: x-small;
- }
+.navbar-toggler {
+  border-color: #FFFEBA;
+} 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(221, 177, 148, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  
 }

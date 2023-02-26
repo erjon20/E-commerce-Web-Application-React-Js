@@ -3,6 +3,32 @@
 
   color: whitesmoke;
 } 
+.container2 {
+  margin-top: 50px;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  font-size: 150px;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  
+}
+
+.firstimage{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
 
 .container{
   margin-top: 15px;
@@ -12,9 +38,11 @@
 }
 .name{
   margin-top: 40px;
+  color:#FFFEBA;
   text-align: center;
 }
-description{
+.description{
+  margin-top: 35px;
   font-family: "Bodoni", serif;
   text-align: center;
   color: white ;
@@ -26,10 +54,10 @@ description{
 
 
 .getInTouch{
-  background-image: linear-gradient(to right, #F09819 0%, #EDDE5D  51%, #F09819  100%);
-  margin-top: 65px;
+  background-color: #FFFEBA;
+  margin-top: 75px;
             margin: 10px;
-            padding: 15px 40px;
+            padding: 10px 30px;
             text-align: center;
             text-transform: uppercase;
             font-size: x-large;
@@ -39,10 +67,14 @@ description{
             color:#161516;            
             border:none;
             border-radius: 20px;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            margin: 0 auto;
             
           }
 
-          #btn:hover {
+          .getInTouch:hover {
             background-position: right center; /* change the direction of the change here */
             color:#161516;
             text-decoration: none;
