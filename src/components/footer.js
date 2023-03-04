@@ -18,17 +18,17 @@ export default function footer() {
             <MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Products</h6>
               <p>
-                <a href='/gold' className='text-reset'>
+                <a href='/productlist' className='text-reset'>
                   Gold
                 </a>
               </p>
               <p>
-                <a href='/silver' className='text-reset'>
+                <a href='/productlist' className='text-reset'>
                   Silver
                 </a>
               </p>
               <p>
-                <a href='/platinum' className='text-reset'>
+                <a href='/productlist' className='text-reset'>
                   Platinum
                 </a>
               </p>
@@ -52,7 +52,7 @@ export default function footer() {
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/productpage' className='text-reset'>
                   Help
                 </a>
               </p>

@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from "react-router-dom"
-import { Navbar, Nav, NavDropdown, Image, Container} from 'react-bootstrap';
+import { Navbar, Nav, Image, Container} from 'react-bootstrap';
 import myImage from './images/logo.png';
 import './css/Navbar.css';
-import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-
-
+import styled from "styled-components";
+import Badge from '@mui/material/Badge';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 // const NavBar = () => {
 
 //   return (
@@ -37,10 +37,10 @@ import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-k
 
 
 
-
+const MenuItem = styled.div`
+`;
 
 function NavBar() {
-  const [isAdminSignedIn, setIsAdminSignedIn] = useState(false);
   return (
     <Navbar collapseOnSelect expand="lg" >
       <Container>
@@ -53,17 +53,17 @@ function NavBar() {
           <Nav.Link href="/">Home </Nav.Link>
           <Nav.Link href="/admin">Admin</Nav.Link>
             <Nav.Link href="/about">About Us</Nav.Link>
-            <NavDropdown title="Shop" id="collasible-nav-dropdown">
-              <NavDropdown.Item href="/gold">Gold</NavDropdown.Item>
-              <NavDropdown.Item href="/Silver">
-               Silver
-              </NavDropdown.Item>
-              <NavDropdown.Item href="/platinum">Platinum</NavDropdown.Item>
-            </NavDropdown>
+            <Nav.Link href="/productlist">Products</Nav.Link>
           </Nav>
           <Nav>
-            <Nav.Link href="/signin">Sign In</Nav.Link>
-            <Nav.Link href="/Cart"> Cart <MDBIcon icon="shopping-bag" className="me-2" /> </Nav.Link>
+            <Nav.Link href="/login">Sign In</Nav.Link>
+            <Nav.Link href="/register">Register</Nav.Link>
+
+            <MenuItem>
+            <Badge badgeContent={4} color="secondary">
+            <Nav.Link href="/Cart"> <ShoppingBagOutlinedIcon /></Nav.Link>
+            </Badge>
+          </MenuItem>
           </Nav>
         </Navbar.Collapse>
       </Container>
