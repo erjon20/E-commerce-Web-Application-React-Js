@@ -42,20 +42,6 @@ const Select = styled.select`
 const Option = styled.option``;
 
 const ProductList = () => {
-  const location = useLocation();
-  const cat = location.pathname.split("/")[2];
-  const [filters, setFilters] = useState({});
-  const [sort, setSort] = useState("newest");
-
-  const handleFilters = (e) => {
-    const value = e.target.value;
-    setFilters({
-      ...filters,
-      [e.target.name]: value,
-    });
-  };
-
-const ProductList = () => {
   return (
     
     <Container>
@@ -64,9 +50,9 @@ const ProductList = () => {
       <FilterContainer>
         <Filter>
           <FilterText>Filter Products:</FilterText>
-          <Select  name="color" onChange={handleFilters}>
+          <Select>
             <Option disabled selected>
-              Type
+              Categorie
             </Option>
             <Option>Bracelet</Option>
             <Option>Ring</Option>
